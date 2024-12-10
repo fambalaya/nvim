@@ -7,9 +7,9 @@ local default_opts = {
     colors = {},
 }
 
-local function highlight(opts) vim.print(1, opts) end
+local function highlight(opts) vim.print('highlight') end
 
-local function clear(opts) vim.print(2, opts) end
+local function clear(opts) vim.print('clear') end
 
 local function setup(opts)
     opts = vim.tbl_deep_extend("force", default_opts, opts)
