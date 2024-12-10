@@ -49,5 +49,6 @@ require("lazy").setup({
         "zipPlugin",
       },
     },
+    dev = { path = vim.fn.stdpath("config") .. "dev" },
   },
 })
