@@ -18,7 +18,6 @@ return {
     {
         "fambalaya/highlight-words.nvim",
         dev = true,
-        opts = {},
         keys = { "<M-a>", "<M-c" },
     },
 }
