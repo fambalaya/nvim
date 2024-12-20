@@ -1,9 +1,16 @@
 return {
+
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "tokyonight-day",
+        },
+    },
     {
         "alanfortlink/blackjack.nvim",
         keys = {
             { "<leader>a", desc = "Addition" },
-            { "<leader>ab", "<cmd>blackJackNewGame<cr>", desc = "Balck jack" },
+            { "<leader>ab", "<cmd>blackJackNewGame<cr>", desc = "Black jack" },
         },
     },
     {
@@ -21,4 +28,10 @@ return {
         opts = {},
         keys = { "<M-a>", "<M-c" },
     },
+    -- games
+    { "Eandrju/cellular-automaton.nvim" },
+    { "alec-gibson/nvim-tetris" },
+    { "seandewar/nvimesweeper" },
+    { "seandewar/killersheep.nvim" },
+    { "jim-fx/sudoku.nvim" },
 }
