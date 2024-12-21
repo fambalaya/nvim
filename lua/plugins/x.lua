@@ -7,16 +7,10 @@ return {
         },
     },
     {
-        "alanfortlink/blackjack.nvim",
-        keys = {
-            { "<leader>a", desc = "Addition" },
-            { "<leader>ab", "<cmd>blackJackNewGame<cr>", desc = "Black jack" },
-        },
-    },
-    {
+        -- http://www.baidu.com
         "fambalaya/url-open",
         keys = {
-            { "gb", "<cmd>URLOpenUnderCursor<cr>", desc = "Browse URL under cursor" },
+            { "<leader>cb", "<cmd>URLOpenUnderCursor<cr>", desc = "Browse URL under cursor" },
         },
         opts = {
             open_app = function()
@@ -31,7 +25,6 @@ return {
     },
     {
         "fambalaya/highlight-words.nvim",
-        dev = true,
         opts = {},
         keys = {
             { "<M-a>", "<cmd>HightlightToggle<cr>" },
@@ -39,6 +32,12 @@ return {
         },
     },
     -- games
+    {
+        "alanfortlink/blackjack.nvim",
+        keys = {
+            { "<leader>ab", "<cmd>BlackJackNewGame<cr>", desc = "Black jack" },
+        },
+    },
     { "Eandrju/cellular-automaton.nvim" },
     { "alec-gibson/nvim-tetris" },
     { "seandewar/nvimesweeper" },
