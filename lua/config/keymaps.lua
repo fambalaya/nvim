@@ -4,6 +4,6 @@
 
 local map = vim.api.nvim_set_keymap
 
-map('n', "<leader>a", "", { desc = "Addition" }
-map('n', "<leader>ag", "", { desc = "Games" }
+map('n', "<leader>a", "", { desc = "Addition" })
+map('n', "<leader>ag", "", { desc = "Games" })
 
