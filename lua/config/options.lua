@@ -16,6 +16,6 @@ if vim.fn.has("gui_running") == 1 then
     if jit.os == "Linux" then
         opt.guifont = "Hack_Nerd_Font_Mono:h8"
     else
-        opt.guifont = "Hack_Nerd_Font_Mono:H10"
+        opt.guifont = "Hack_Nerd_Font_Mono:h10"
     end
 end
