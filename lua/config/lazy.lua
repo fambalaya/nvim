@@ -50,4 +50,7 @@ require("lazy").setup({
       },
     },
   },
+  dev = {
+    path = (function() return jit.os == "Windows" and [[e:\home\lulin\code\nvim-dev\]] or "~/projects" end)(),
+  },
 })
