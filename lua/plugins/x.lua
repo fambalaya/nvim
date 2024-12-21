@@ -23,10 +23,19 @@ return {
         },
     },
     {
+        "fambalaya/resize-font.nvim",
+        dev = true,
+        opts = {},
+        keys = { "<C-->", "<C-=>", "<C-ScrollWheelUp>", "<C-ScrollWheelDown>" },
+    },
+    {
         "fambalaya/highlight-words.nvim",
         dev = true,
         opts = {},
-        keys = { "<M-a>", "<M-c" },
+        keys = {
+            { "<M-a>", "<cmd>HightlightToggle<cr>" },
+            { "<M-c>", "<cmd>HightlightClear<cr>" },
+        },
     },
     -- games
     { "Eandrju/cellular-automaton.nvim" },
@@ -34,4 +43,7 @@ return {
     { "seandewar/nvimesweeper" },
     { "seandewar/killersheep.nvim" },
     { "jim-fx/sudoku.nvim" },
+
+    -- ai
+    { import = "lazyvim.plugins.extras.ai.copilot" },
 }

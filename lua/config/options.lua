@@ -13,5 +13,9 @@ opt.expandtab = true
 opt.relativenumber = false
 
 if vim.fn.has("gui_running") == 1 then
-  opt.guifont = "Hack_Nerd_Font_Mono:h10"
+    if jit.os == "Linux" then
+        opt.guifont = "Hack_Nerd_Font_Mono:h8"
+    else
+        opt.guifont = "Hack_Nerd_Font_Mono:H10"
+    end
 end
