@@ -19,12 +19,13 @@ return {
             { "gb", "<cmd>URLOpenUnderCursor<cr>", desc = "Browse URL under cursor" },
         },
         opts = {
-            open_app = [[C:\Program Files (x86)\Google\Chrome\Application\chrome.exe]],
+            open_app = function()
+                if jit.os == "Windows" then return [[C:\Program Files (x86)\Google\Chrome\Application\chrome.exe]] end
+            end
         },
     },
     {
         "fambalaya/resize-font.nvim",
-        dev = true,
         opts = {},
         keys = { "<C-->", "<C-=>", "<C-ScrollWheelUp>", "<C-ScrollWheelDown>" },
     },
